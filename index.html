@@ -260,6 +260,15 @@
   .readme-text{ font-size:14px; color:var(--fg-muted); line-height:1.7; }
   .readme-text b{ color:var(--fg); font-weight:600; }
   .badge-row{ display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+  .readme-facts{
+    list-style:none; margin-top:22px; padding-top:20px; border-top:1px solid var(--border-muted);
+    display:flex; flex-direction:column; gap:11px;
+  }
+  .readme-facts li{
+    display:flex; align-items:flex-start; gap:10px; font-size:13.5px; color:var(--fg-muted); line-height:1.5;
+  }
+  .readme-facts .fact-ic{ flex:none; font-size:14px; margin-top:1px; }
+  .readme-facts b{ color:var(--fg); font-weight:600; }
   .badge{
     display:inline-flex; align-items:stretch; border-radius:4px; overflow:hidden;
     font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:500;
@@ -625,6 +634,12 @@
               <span class="badge b-blue"><span class="badge-label">status</span><span class="badge-value">seeking opportunities</span></span>
               <span class="badge b-amber"><span class="badge-label">cgpa</span><span class="badge-value">8.58</span></span>
             </div>
+            <ul class="readme-facts">
+              <li><span class="fact-ic">🎓</span><span>B.Tech in Computer Science &amp; Engineering at <b>VIT</b>, graduating <b>May 2027</b></span></li>
+              <li><span class="fact-ic">🚀</span><span>3 end-to-end projects shipped — including two live ML apps self-hosted on <b>AWS EC2</b> behind Nginx</span></li>
+              <li><span class="fact-ic">🏆</span><span><b>250+</b> DSA problems solved with a <b>1500+</b> competitive programming rating</span></li>
+              <li><span class="fact-ic">📜</span><span><b>5</b> certifications — AWS, Microsoft Azure, IBM SkillsBuild, and two NPTEL courses (IIT Kharagpur &amp; IIT Madras)</span></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -651,46 +666,37 @@
           </div>
         </div>
         <div class="bento-card">
-          <div class="bento-head"><span class="bento-ic">🧠</span>Core Competencies</div>
+          <div class="bento-head"><span class="bento-ic">📦</span>Frameworks &amp; Libraries</div>
           <div class="pill-row">
-            <span class="pill">Data Structures &amp; Algorithms</span>
-            <span class="pill">OOP</span>
-            <span class="pill">DBMS</span>
+            <span class="pill">Flask</span><span class="pill">Scikit-learn</span>
+            <span class="pill">LightGBM</span><span class="pill">NumPy</span>
+            <span class="pill">Pandas</span><span class="pill">Matplotlib</span>
+            <span class="pill">Seaborn</span>
           </div>
         </div>
         <div class="bento-card">
-          <div class="bento-head"><span class="bento-ic">📊</span>ML / Data Science</div>
+          <div class="bento-head"><span class="bento-ic">☁️</span>Cloud Platforms</div>
           <div class="pill-row">
-            <span class="pill">Feature Engineering</span><span class="pill">Model Tuning</span>
-            <span class="pill">SMOTE</span><span class="pill">Clustering</span>
-            <span class="pill">SHAP Explainability</span><span class="pill">MLflow Tracking</span><span class="pill">MLOps</span>
+            <span class="pill">AWS (EC2, Nginx Reverse Proxy)</span>
+            <span class="pill">Microsoft Azure (AI Fundamentals)</span>
           </div>
         </div>
         <div class="bento-card">
-          <div class="bento-head"><span class="bento-ic">📦</span>Libraries / Frameworks</div>
+          <div class="bento-head"><span class="bento-ic">🗄️</span>Databases &amp; Tools</div>
           <div class="pill-row">
-            <span class="pill">NumPy</span><span class="pill">Pandas</span>
-            <span class="pill">Scikit-learn</span><span class="pill">LightGBM</span>
-            <span class="pill">SHAP</span><span class="pill">MLflow</span>
-            <span class="pill">Matplotlib</span><span class="pill">Seaborn</span>
-            <span class="pill">Flask</span>
-          </div>
-        </div>
-        <div class="bento-card">
-          <div class="bento-head"><span class="bento-ic">☁️</span>Cloud &amp; Tools</div>
-          <div class="pill-row">
-            <span class="pill">AWS (EC2, Nginx)</span><span class="pill">Microsoft Azure</span>
             <span class="pill">MySQL</span><span class="pill">JDBC</span>
             <span class="pill">Git</span><span class="pill">GitHub</span>
             <span class="pill">Power BI</span><span class="pill">Jupyter Notebook</span>
           </div>
         </div>
-        <div class="bento-card">
-          <div class="bento-head"><span class="bento-ic">✨</span>Generative AI &amp; LLM</div>
+        <div class="bento-card" style="grid-column:1 / -1;">
+          <div class="bento-head"><span class="bento-ic">🧠</span>Core Concepts</div>
           <div class="pill-row">
-            <span class="pill">LLM Concepts</span><span class="pill">Prompt Engineering</span>
-            <span class="pill">RAG Pipelines</span><span class="pill">LangChain (familiar)</span>
-            <span class="pill">Azure AI Foundry</span>
+            <span class="pill">Data Structures &amp; Algorithms</span><span class="pill">OOP</span>
+            <span class="pill">DBMS</span><span class="pill">Feature Engineering</span>
+            <span class="pill">Model Tuning</span><span class="pill">SMOTE</span>
+            <span class="pill">Clustering</span><span class="pill">SHAP Explainability</span>
+            <span class="pill">MLOps</span><span class="pill">MLflow Experiment Tracking</span>
           </div>
         </div>
       </div>
